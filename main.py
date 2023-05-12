@@ -3,7 +3,7 @@
 ### pcd systems challenge
 
 # 1. Read the file ‘delitos_fuero_comun.xlsx’
-
+print('Hello World to commit!')
 # 2. In each cell, remove unneeded white spaces before and after the text
 
 # 3. Execute on Python the SQL query required to create a table called ‘delitos’.
