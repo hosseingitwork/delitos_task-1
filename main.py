@@ -1,10 +1,8 @@
+import pandas as pd
 
 ### @autor Hossein Yahyazadeh
 ### pcd systems challenge
 
-# 1. Read the file ‘delitos_fuero_comun.xlsx’
-print('Hello World to commit!')
-# 2. In each cell, remove unneeded white spaces before and after the text
 
 # 3. Execute on Python the SQL query required to create a table called ‘delitos’.
 # (Drop the table if exists, so there is no previous data)
@@ -18,3 +16,35 @@ print('Hello World to commit!')
 # for May 4th, 2023.
 
 # 6. Execute the queries to the DB.
+
+# 2. In each cell, remove unneeded white spaces before and after the text
+def clean_cell_whitespace(data):
+    cleaned_data = data.copy()  # Create a copy of the original DataFrame
+
+    # Iterate over each cell and clean whitespace
+    for i in range(len(cleaned_data.index)):
+        for j in range(len(cleaned_data.columns)):
+            if isinstance(cleaned_data.iat[i, j], str):
+                cleaned_data.iat[i, j] = cleaned_data.iat[i, j].strip()
+
+    return cleaned_data
+
+# 1. Read the file ‘delitos_fuero_comun.xlsx’
+def readXlsx(file):
+    
+    data = pd.read_excel(file)
+    cleaned_data = clean_cell_whitespace(data)
+
+    print(cleaned_data)
+    return clean_cell_whitespace
+
+###SECTION - main 
+def main():
+
+    ###NOTE - constant project variables 
+    file = './delitos_fuero_comun.xlsx'
+
+
+    readXlsx(file)
+
+main()
