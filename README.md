@@ -1,6 +1,6 @@
 # delitos_task
 
-Para realizar los siguientes pasos es necesario que cuente con [Python][1] instalado en su sistema, tambien con el comando [pip][2], cabe mencionar que todos los comandos y configuración explicada está hecha basada en el sistema operativo Windows
+Para realizar los siguientes pasos es necesario que cuente con [Python][1] instalado en su sistema, tambien con el comando [pip][2], cabe mencionar que todos los comandos y configuración explicada está hecha basada en el sistema operativo Windows. El programa está utilizando la base de datos SQLite. Sé que lo recomendable fue usar el SQL Server, pero en este caso por cuestiones de tiempo e instalaciones se hizo otra elección
 
 Pasos para correr el proyecto:
     
