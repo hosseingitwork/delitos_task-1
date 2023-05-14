@@ -11,7 +11,7 @@ Steps to run the project:
    'virtualenv <name (e.g., env)>'
 
 3. Activate the virtual environment:
-   './<name>/Scripts/activate'
+   './<name (same name you chosed)>/Scripts/activate'
 
 4. Install the requirements:
    'pip install -r requirements.txt'
